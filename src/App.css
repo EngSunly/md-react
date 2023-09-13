@@ -1,38 +1,40 @@
-.App {
+/* use grid and divide into 2 columns */
+.title{
   text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.border {
+  border: 1px solid black;
+  height: 10vh;
+}
+.grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.editor{
+  grid-column: 1;
+  grid-row: 1;
+  height: 100vh;
+  background-color: aquamarine;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input{
+  height: 80vh;
+  width: 99%;
+  background-color: aquamarine;
+  border: none;
+}
+.view{
+  grid-column: 2;
+  grid-row: 1;
+  height: 100vh;
+  background-color: turquoise;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
