@@ -23,8 +23,9 @@
 .editor{
   grid-column: 1;
   grid-row: 2;
-  height: 100vh;
+  height: same-as-view;
   background-color: aquamarine;
+  
 }
 
 .input{
@@ -36,7 +37,7 @@
 .view{
   grid-column: 2;
   grid-row: 2;
-  height: 100vh;
+  height: fit-content;
   background-color: turquoise;
 }
 
